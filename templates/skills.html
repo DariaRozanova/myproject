@@ -1,0 +1,601 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Навыки{% endblock %}
+{% block main_content %}
+    <div class="page">
+        <div class="page-title mb-4">
+            <p>Навыки</p>
+        </div>
+        <div class="page-description mb-5">
+            <p>Ниже представлены графики и таблицы для Топ-20 навыков по годам для всех вакансий и для профессии UX/UI дизайнер.</p>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="section-title mb-3">
+            Общая статистика
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        В 2015 Вам стоило бы знать:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> JavaScript
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> ООП
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> jQuery
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> HTML5
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> HTML
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_0_1.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col-9">
+                <img src="{{ page.chart_0_2.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        Любой работодатель скажет Вам "Да!" в 2016, если владеете следующими навыками:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> JavaScript
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> HTML
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> PHP
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Git
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Ведение переговоров
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        2к17, определенно, год для:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> JavaScript
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> HTML
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> PHP
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> CSS
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Git
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_0_3.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col-9">
+                <img src="{{ page.chart_0_4.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        2018 - год стабильности, ведь до сих пор нужны:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> JavaScript
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> HTML
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Git
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> CSS
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> PHP
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        В 2019 стал популярен TikTok, но мы не отвлекаемся, а осваиваем:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> JavaScript
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> SQL
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Git
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> HTML
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Работа в команде
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_0_5.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col-9">
+                <img src="{{ page.chart_0_6.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        2020 год был не простым, потому что нужно было знать:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> SQL
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> Git
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Английский язык
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> JavaScript
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Работа в команде
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        В 2021 купили квартиру те, у кого были хорошие отношения с:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> SQL
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> Работа в команде
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Английский язык
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Грамотная речь
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Git
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_0_7.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col-9">
+                <img src="{{ page.chart_0_8.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        2022 решил, что нам нечем заняться, и предложил попрактиковать:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> Работа в команде
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> SQL
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Английский язык
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Git
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Linux
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        В 2023 компании охотились на тех, что знает:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> SQL
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> Работа в команде
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Linux
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Git
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Python
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_0_9.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="section-title mb-3">
+            Топ-20 навыков по годам в табличном формате
+        </div>
+        <div class="row mb-5">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr class="table-head">
+                        <th scope="row">№</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                        <th>2018</th>
+                        <th>2019</th>
+                        <th>2020</th>
+                        <th>2021</th>
+                        <th>2022</th>
+                        <th>2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in table_0_1 %}
+                        <tr>
+                            <td class="cell">{{ i.index }}</td>
+                            <td class="skill-cell">{{ i.2015 }}</td>
+                            <td class="skill-cell">{{ i.2016 }}</td>
+                            <td class="skill-cell">{{ i.2017 }}</td>
+                            <td class="skill-cell">{{ i.2018 }}</td>
+                            <td class="skill-cell">{{ i.2019 }}</td>
+                            <td class="skill-cell">{{ i.2020 }}</td>
+                            <td class="skill-cell">{{ i.2021 }}</td>
+                            <td class="skill-cell">{{ i.2022 }}</td>
+                            <td class="skill-cell">{{ i.2023 }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <hr class="hr hr-blurry" />
+
+
+        <div class="section-title mb-3">
+            Статистика по профессии
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        В 2015 Вы - бриллиант, если знаете:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> UI
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> UX
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Usability
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Design
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Adobe Photoshop
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_1_1.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col-9">
+                <img src="{{ page.chart_1_2.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        Стать лучшим в своем деле в 2016 году невозможно без:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> UX
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> UI
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Adobe Photoshop
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Дизайн интерфейсов
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Проектирование пользовательских интерфейсов
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        Для крутых проектов в 2017 обязательно нужно владеть:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> UX
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> UI
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Adobe Photoshop
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Дизайн интерфейсов
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Adobe Illustrator
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_1_3.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col-9">
+                <img src="{{ page.chart_1_4.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        Вы - лучший их лучших в 2018 только при условии, что Вы знаете:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> UX
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> UI
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Adobe Photoshop
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Дизайн интерфейсов
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Adobe Illustrator
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        Без них в 2019 называть себя UX/UI дизайнером невозможно:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> UX
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> UI
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Adobe Photoshop
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Дизайн интерфейсов
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Проектирование пользовательских интерфейсов
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_1_5.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col-9">
+                <img src="{{ page.chart_1_6.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        Годы идут, ничего не меняется. В 2020 так же актуальны:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> UX
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> UI
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Adobe Photoshop
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Дизайн интерфейсов
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> РПроектирование пользовательских интерфейсов
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        Вам точно стоит идти в UX/UI дизайнеры, если Вы знаете:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> UX
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> UI
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> Adobe Photoshop
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Figma
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Adobe Illustrator
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_1_7.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col-9">
+                <img src="{{ page.chart_1_8.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        В 2022 на арену уверенно врываются:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> Figma
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> Adobe Photoshop
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> UX
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> UI
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Adobe Illustrator
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <div class="description mt-4">
+                    <div class="mb-3">
+                        В 2023 без них Вы, как без кислорода:
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-1-circle"></i> Figma
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-2-circle"></i> UX
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-3-circle"></i> UI
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-4-circle"></i> Adobe Photoshop
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-5-circle"></i> Adobe Illustrator
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="{{ page.chart_1_9.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="section-title mb-3">
+            Топ-20 навыков по годам в табличном формате
+        </div>
+        <div class="row mb-5">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr class="table-head">
+                        <th scope="row">№</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                        <th>2018</th>
+                        <th>2019</th>
+                        <th>2020</th>
+                        <th>2021</th>
+                        <th>2022</th>
+                        <th>2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in table_1_1 %}
+                        <tr>
+                            <td class="cell">{{ i.index }}</td>
+                            <td class="skill-cell">{{ i.2015 }}</td>
+                            <td class="skill-cell">{{ i.2016 }}</td>
+                            <td class="skill-cell">{{ i.2017 }}</td>
+                            <td class="skill-cell">{{ i.2018 }}</td>
+                            <td class="skill-cell">{{ i.2019 }}</td>
+                            <td class="skill-cell">{{ i.2020 }}</td>
+                            <td class="skill-cell">{{ i.2021 }}</td>
+                            <td class="skill-cell">{{ i.2022 }}</td>
+                            <td class="skill-cell">{{ i.2023 }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

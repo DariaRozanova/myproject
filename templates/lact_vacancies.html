@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Последние вакансии{% endblock %}
+{% block main_content %}
+    <div class="page">
+        <div class="page-title mb-4">
+            <p>Последние вакансии</p>
+        </div>
+        <div class="page-description mb-5">
+            <p>Список последних 10 вакансий UX/UI дизайнера, опубликованных на HH.ru.</p>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div>
+            {% for i in data %}
+                <div class="mb-5 vac-wrapper">
+                    <div class="vac-name mb-3">
+                        {{ i.name }}
+                    </div>
+                    <div class="vac-info mb-2">
+                        <span class="info-title">Описание:</span> {{ i.description }}
+                    </div>
+                    <div class="vac-info mb-2">
+                        <span class="info-title">Навыки:</span> {{ i.key_skills }}
+                    </div>
+                    <div class="vac-info mb-2">
+                        <span class="info-title">Компания:</span> {{ i.company }}
+                    </div>
+                    <div class="vac-info mb-2">
+                        <span class="info-title">Оклад:</span> {{ i.salary }}
+                    </div>
+                    <div class="vac-info mb-2">
+                        <span class="info-title">Регион:</span> {{ i.area }}
+                    </div>
+                    <div class="vac-info mb-2">
+                        <span class="info-title">Дата публикации:</span> {{ i.published_at }}
+                    </div>
+                </div>
+                <hr class="hr hr-blurry" />
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+

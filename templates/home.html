@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Главная{% endblock %}
+{% block main_content %}
+    <div class="page main-page">
+        {% autoescape off %}
+            {{ mainPage.text }}
+        {% endautoescape %}
+    </div>
+{% endblock %}

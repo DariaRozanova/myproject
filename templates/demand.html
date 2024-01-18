@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Востребованность{% endblock %}
+{% block main_content %}
+    <div class="page">
+        <div class="page-title mb-4">
+            <p>Статистика по годам</p>
+        </div>
+        <div class="page-description mb-5">
+            <p>Ниже представлены графики и таблицы для статистик 'Средняя зарплата по годам' и 'Количество вакансий по годам' по всем вакансиям и по профессии UX/UI дизайнер.</p>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <img src='{{ page.chart_first.url }}' alt="" class="img-fluid">
+                <img src='{{ page.chart_second.url }}' alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr class="table-head">
+                            <th>Год</th>
+                            <th>Средняя зарплата (руб)</th>
+                            <th>Количество</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for i in data_all %}
+                            <tr>
+                                <td class="cell year-cell">{{ i.published_at}}</td>
+                                <td class="cell salary-cell">{{ i.salary_rur }}</td>
+                                <td class="cell count-cell">{{ i.name }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mb-5">
+            <div class="col">
+                <img src='{{ page.chart_third.url }}' alt="" class="img-fluid">
+                <img src='{{ page.chart_fourth.url }}' alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr class="table-head">
+                            <th>Год</th>
+                            <th>Средняя зарплата (руб)</th>
+                            <th>Количество</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for i in data_vac %}
+                            <tr>
+                                <td class="cell year-cell">{{ i.published_at}}</td>
+                                <td class="cell salary-cell">{{ i.salary_rur }}</td>
+                                <td class="cell count-cell">{{ i.name }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
